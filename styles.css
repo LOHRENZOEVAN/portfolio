@@ -1,0 +1,140 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #002366; /* Dark Blue */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #001a4d; /* Darker shade of blue */
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #ffde59; /* Yellow accent on hover */
+}
+
+main {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+section#hero {
+    background-color: #001a4d; /* Darker shade of blue */
+    padding: 80px 20px;
+    border-radius: 10px;
+}
+
+section#hero h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+section#hero p {
+    font-size: 1.2em;
+    color: #ffde59; /* Yellow accent */
+}
+
+section#hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #002366;
+    background-color: #ffde59; /* Yellow Button */
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffde59; /* Yellow accent */
+}
+
+section p, section ul, section li {
+    color: #ffffff;
+}
+
+section#skills .skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+section#skills .skill {
+    background-color: #001a4d; /* Darker shade of blue */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+}
+
+section#portfolio .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+section#portfolio .project {
+    background-color: #001a4d; /* Darker shade of blue */
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+}
+
+section#portfolio .project h3 a {
+    color: #ffde59; /* Yellow accent */
+    text-decoration: none;
+}
+
+footer {
+    background-color: #001a4d; /* Darker shade of blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
