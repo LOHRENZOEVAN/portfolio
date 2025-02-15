@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0A0E27;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    text-align: center; /* Centralize text across the page */
+}
+
+header {
+    background-color: #061336;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Add spacing between links */
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4dabf7;
+}
+
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #0A0E27;
+}
+
+#hero h1 span {
+    color: #4dabf7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #4dabf7;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #77c0f9;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px; /* Set a max-width to avoid stretching */
+    margin: 0 auto; /* Center the sections */
+}
+
+#about p, #contact p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#skills {
+    background-color: #061336;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #4dabf7;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #061336;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#portfolio .projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #061336;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+footer {
+    background-color: #061336;
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Ensure footer stretches across the entire width */
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 14px;
+}
