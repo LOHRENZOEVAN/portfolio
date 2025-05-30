@@ -1,8 +1,12 @@
-/* styles.css */
+/* styles.css - Mobile Responsive Version */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #002366; /* Dark Blue */
+    background-color: #002366;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #001a4d; /* Darker shade of blue */
+    background-color: #001a4d;
     color: #ffffff;
     width: 100%;
     text-align: center;
@@ -44,13 +48,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffde59; /* Yellow accent on hover */
-}
-
-main {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
+    color: #ffde59;
 }
 
 section {
@@ -59,7 +57,7 @@ section {
 }
 
 section#hero {
-    background-color: #001a4d; /* Darker shade of blue */
+    background-color: #001a4d;
     padding: 80px 20px;
     border-radius: 10px;
 }
@@ -71,14 +69,14 @@ section#hero h1 {
 
 section#hero p {
     font-size: 1.2em;
-    color: #ffde59; /* Yellow accent */
+    color: #ffde59;
 }
 
 section#hero .btn {
     display: inline-block;
     padding: 10px 20px;
     color: #002366;
-    background-color: #ffde59; /* Yellow Button */
+    background-color: #ffde59;
     text-decoration: none;
     font-weight: 600;
     border-radius: 5px;
@@ -88,13 +86,14 @@ section#hero .btn {
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #ffde59; /* Yellow accent */
+    color: #ffde59;
 }
 
 section p, section ul, section li {
     color: #ffffff;
 }
 
+/* Skills Section */
 section#skills .skill-box {
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +102,7 @@ section#skills .skill-box {
 }
 
 section#skills .skill {
-    background-color: #001a4d; /* Darker shade of blue */
+    background-color: #001a4d;
     padding: 10px 15px;
     border-radius: 5px;
     margin: 5px;
@@ -111,30 +110,212 @@ section#skills .skill {
     text-align: center;
 }
 
-section#portfolio .projects {
+/* Portfolio and Accolades Sections */
+section#portfolio .projects,
+section#accolades .projects {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-section#portfolio .project {
-    background-color: #001a4d; /* Darker shade of blue */
+section#portfolio .project,
+section#accolades .project {
+    background-color: #001a4d;
     padding: 20px;
     border-radius: 5px;
     flex: 1 1 calc(33.333% - 20px);
     text-align: center;
 }
 
-section#portfolio .project h3 a {
-    color: #ffde59; /* Yellow accent */
+section#portfolio .project h3 a,
+section#accolades .project h3 a {
+    color: #ffde59;
     text-decoration: none;
 }
 
+/* Contact Section */
+section#contact {
+    margin: 20px 0;
+}
+
 footer {
-    background-color: #001a4d; /* Darker shade of blue */
+    background-color: #001a4d;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
     width: 100%;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    section#hero {
+        padding: 40px 15px;
+    }
+    
+    section#hero h1 {
+        font-size: 1.8em;
+    }
+    
+    section#hero p {
+        font-size: 1em;
+    }
+    
+    section#skills .skill-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section#skills .skill {
+        flex: none;
+        width: 80%;
+        max-width: 300px;
+    }
+    
+    section#portfolio .projects,
+    section#accolades .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section#portfolio .project,
+    section#accolades .project {
+        flex: none;
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 5px;
+    }
+    
+    section#hero {
+        padding: 30px 10px;
+    }
+    
+    section#hero h1 {
+        font-size: 1.5em;
+    }
+    
+    section#hero p {
+        font-size: 0.9em;
+    }
+    
+    section#hero .btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+    
+    section h2 {
+        font-size: 1.5em;
+    }
+    
+    section#skills .skill {
+        width: 95%;
+    }
+    
+    section#portfolio .project,
+    section#accolades .project {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+/* Contact Section */
+section#contact {
+    background-color: #001a4d;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px 20px;
+}
+
+section#contact p {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #001a4d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 10px;
+    }
+    
+    nav a {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+    
+    section {
+        padding: 0 15px;
+        margin: 15px auto;
+    }
+    
+    section#hero {
+        padding: 40px 15px;
+        margin: 15px;
+    }
+    
+    section#skills .skill-box {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+    
+    section#portfolio .projects,
+    section#accolades .projects {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    section#portfolio .project,
+    section#accolades .project {
+        padding: 20px;
+    }
+    
+    section#contact {
+        margin: 20px 15px;
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    section#skills .skill-box {
+        grid-template-columns: 1fr;
+    }
+    
+    section#hero .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }
